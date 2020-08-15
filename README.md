@@ -59,3 +59,21 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Manual Use
+1. Download Project
+2. Place in htdocs folder
+3. Create new Database, name it as crudsample on your xampp php server (or whatever you use)
+4. Open project using vscode or whatever you prefer
+5. try "npm install" & "composer install" to update the necessary addition
+6. Copy .env.example and rename it as .env
+7. Edit DB configuration using your DB Management you choose.
+8. try "php artisan" to see if the projects working
+9. If you have artisan running correctly then try "php artisan migrate", all table defined should automatically generated on your DB Server
+10. try "php artisan serve" then access localhost:8000
+
+## Notes
+This version is incomplete and it still under production. Contact me if you found some junk file or bugs on this project. Clean source code will update frequently.
+
+# Thank's
+Thank's for your support, I hope it will updated regularly and it could become big project part for learning Laravel. Check out for our further information.
