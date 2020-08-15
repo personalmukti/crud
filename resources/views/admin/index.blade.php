@@ -47,9 +47,9 @@
                 <td>{{$que->memberAlamat}}</td>
                 <td>{{$que->memberLevel}}</td>
                 <td>
-                    <form action="" method="post">
-                    <a class="btn btn-sm btn-success" href="">Lihat Member</a>
-                    <a class="btn btn-sm btn-warning" href="">Edit Member</a>
+                    <form action="{{ route('admin.destroy',$que->id) }}" method="post">
+                    <a class="btn btn-sm btn-success" href="{{ route('admin.show', $que->id)}}">Lihat Member</a>
+                    <a class="btn btn-sm btn-warning" href="{{ route('admin.edit', $que->id)}}">Edit Member</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-sm btn-danger">Hapus Member</button>

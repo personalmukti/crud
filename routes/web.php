@@ -11,9 +11,6 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 | 
-
-
-
 |
 */
 
@@ -30,4 +27,5 @@ route::resource('admin', 'AdminController');
 
 Route::get('admin.create', 'AdminController@create')->name('create');
 Route::post('admin.store', 'AdminController@store')->name('store');
+Route::get('admin.show', 'AdminController@show')->name('show');
 
